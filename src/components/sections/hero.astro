@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+
+
+---
+<div class="flex justify-center items-center gap-12">
+  <div class="">
+    <h1 class="text-7xl text-pretty leading-tight">
+      <!-- The Most Aesthetic Way To Manage Your Frontend development process. -->
+      Fast-Track Your Career: Become a <span class="shadow-text">
+        <span class="bg-gradient">Frontend Pro</span>
+      </span>
+    </h1>
+    <div class="w-44">
+      <p class="py-8 text-lg text-pretty text-neutral-400">
+        Prioritize what matters,
+        Remove distraction,
+        and get it done
+        in flow state
+      </p>
+    </div>
+    <div class="flex items-center pt-8 space-x-4">
+      <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r border-cyan-500 border rounded-3xl text-2xl text-white/90" href="#faq">Get Roadmap -></a>
+    </div>
+  </div>
+  <div>
+    <div class="w-[480px] ">
+      <img class="rounded-md" src="/shot4.png" /> 
+    </div>
+  </div>
+</div>
+
+<style is:global>
+.bg-gradient {
+  background-image: linear-gradient(100deg, hsl(180, 87%, 42%) 0%, hsl(236, 62%, 46%) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.shadow-text {
+  text-shadow: 0 0 40px hsla(180, 87%, 42%, 0.6), 0 0 20px hsla(236, 62%, 46%), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+</style>

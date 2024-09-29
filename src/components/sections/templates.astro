@@ -1,0 +1,32 @@
+---
+import { templates } from '../../constant/templates';
+---
+<div class="flex flex-col items-center">
+  <div class="w-[620px]">
+    <h2 class="text-5xl text-center font-semibold text-pretty">
+      5 Notion Templates to
+      manage your goals and 
+      <span class="bg-gradient"><span class="shadow-text">projects.</span></span>
+    </h2>
+    <p class="py-8 text-neutral-400 font-semibold text-center text-lg">
+      5 Included templates designed to become your 
+      go-to systems for managing each aspect of your frontend carrer.
+    </p>
+  </div>
+  <div class="flex flex-wrap w-[800px] p-16 gap-12 justify-center"> 
+    {
+      templates.map((item) => (
+        <a href={item.url}>
+          <span class="flex justify-center items-center gap-x-2 rounded-full shadow-md shadow-cyan-800 bg-black text-lg font-semibold py-2 px-4">
+            <item.icon/>
+            {item.name}
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+
+</style>
