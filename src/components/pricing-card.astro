@@ -1,3 +1,6 @@
+---
+import {config} from "../config"
+---
 <div class="flex gap-x-4 items-start">
   <article class="border rounded-2xl border-[#262626] w-2/4 p-2 relative overflow-hidden bg-card">
     <div class="flex justify-between w-full p-4 gap-x-4">
@@ -5,7 +8,7 @@
         Frontend Dev Pro
       </h3>
       <p class="text-4xl font-semibold inline-block">
-        $29
+        $20
       </p>
     </div>
     <div class="p-4">
@@ -25,7 +28,7 @@
       <img class="block w-full h-full rounded-[inherit]" src="/go.png" alt="cover">
     </div>
     <div class="flex items-start pl-4 py-4">
-      <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r border-cyan-500 border rounded-3xl text-xl text-white/90" href="#faq">Get it now</a>
+      <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r border-cyan-500 border rounded-3xl text-xl text-white/90" target="_blank" href={config.gumroad_link}>Get it now</a>
     </div>
   </article>
 
@@ -40,7 +43,7 @@
           Developer excellence
         </h3>
         <p class="text-4xl font-semibold inline-block">
-          $99
+          wait for it...
         </p>
       </div>
       <div class="p-4">
@@ -66,7 +69,7 @@
         <img class="block w-full h-full rounded-[inherit]" src="/go.png" alt="cover">
       </div>
         <div class="flex items-start pl-4 py-4">
-          <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl text-xl text-white/90" href="#faq">Get it now</a>
+          <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl text-xl text-white/90" target="_blank" href={config.gumroad_link}>Get it now</a>
         </div>
       </div>
   </article>

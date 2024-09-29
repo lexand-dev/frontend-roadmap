@@ -1,9 +1,12 @@
+---
+import { config } from "../config";
+---
 <div class="border-t border-neutral-600 w-full pt-12 px-6 pb-28">
   <footer class="max-w-[1080px] mx-auto flex flex-col gap-16">
     <div class="flex justify-between">
       <div class="flex flex-col gap-9">
         <div>
-          logo
+          <img src="/logo.svg" alt="">
         </div>
         <div>
           social media
@@ -12,7 +15,7 @@
 
       <div class="flex flex-col gap-9 h-min justify-start items-end w-min">
         <div>
-          <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl font-normal text-base text-white/90" href="#faq">Get Roadmap</a>
+          <a class="block hover:opacity-80 transition pb-2 pt-1 px-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl font-normal text-base text-white/90" target="_blank" href={config.gumroad_link} >Get Roadmap</a>
         </div>
         <div class="flex flex-row w-min gap-10">
           <div>
